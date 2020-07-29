@@ -1,0 +1,193 @@
+ @charset "UTF-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; }
+body, html { height: 100%; background-color: #555; }
+ul { list-style-type: none; }
+a { text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, p { color: #e9e9e9; }
+
+h1 { font-size: 2em;  	}
+h2 { font-size: 1.5em; 	}
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; 	}
+h6 { font-size: .75em; 	}
+p  { font-size: 1.2em;
+    text-align: center;
+    margin-top: 4px; 	
+}
+ 
+#container { position: relative; }
+
+ #video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 300px);
+      grid-auto-rows: 300px;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+    position: fixed;
+     bottom: 0;
+    height: 110px;
+    width: 100%;
+    background-color:  #3e3e3e;
+    }
+
+    ul {
+      list-style-type: none;
+        display:table;
+        margin: 0 auto;
+    }
+
+    li {
+    position: relative;
+    display: table-cell;
+    height: 110px;
+    vertical-align: middle;
+  }
+  
+  button {
+    /* background:rgb(3,236,255); */
+      background:#03aff9; 
+  }
+	
+#select, #select1, #select2 {
+	padding: 10px 50px;
+    border: none;
+	outline: none;
+  cursor: pointer;
+  margin: 0 2px;;
+}
+
+/* span {
+    position: absolute;
+    z-index: 1;
+    left: 63px;
+    right: 0;
+    top: 33px;
+    bottom: 0;
+    display: inline-block;
+}
+object {
+	width: 40px;
+} */
+
+span.camera {
+	background: url(img/camera.svg) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+span.mic {
+  background: url(img/mic.svg) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+span.cancel {
+  background: url(img/cancel.svg) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+/* #buttonChange, #buttonChange2{ 
+    background-color: rgb(0, 255, 208); 
+    background-color: rgb(0, 255, 208);
+    padding: 20px 50px;
+    border: none;
+	outline: none;
+	cursor: pointer;
+}
+#buttonChange.toggled,
+#buttonChange2.toggled  { background-color: rgb(255, 0, 47); } */
+/*==========================================
+Call Ended Page
+==========================================*/
+h1 {
+  margin: 200px auto;
+  display: table;
+  color: #e9e9e9;
+}
+
+
+/*==========================================
+For checkmark style buttons
+==========================================*/
+    /* .switch {
+      position: relative;
+      display: table;
+      margin: 0 auto;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* background-color: #2196F3; 
+      background-color: #78FFD6;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked+.slider {
+      background-color: #ccc;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #ccc;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders 
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    } */
